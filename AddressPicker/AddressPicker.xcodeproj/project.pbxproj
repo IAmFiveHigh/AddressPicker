@@ -13,6 +13,7 @@
 		35907A7C20C27D6F00BA38B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35907A7B20C27D6F00BA38B9 /* Assets.xcassets */; };
 		35907A7F20C27D6F00BA38B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35907A7D20C27D6F00BA38B9 /* LaunchScreen.storyboard */; };
 		35907A8720C27D9F00BA38B9 /* AddressPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35907A8620C27D9F00BA38B9 /* AddressPicker.swift */; };
+		35907A8920C27E1500BA38B9 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35907A8820C27E1500BA38B9 /* area.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		35907A7E20C27D6F00BA38B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35907A8020C27D6F00BA38B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35907A8620C27D9F00BA38B9 /* AddressPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPicker.swift; sourceTree = "<group>"; };
+		35907A8820C27E1500BA38B9 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		35907A7320C27D6900BA38B9 /* AddressPicker */ = {
 			isa = PBXGroup;
 			children = (
+				35907A8620C27D9F00BA38B9 /* AddressPicker.swift */,
+				35907A8820C27E1500BA38B9 /* area.plist */,
 				35907A7420C27D6900BA38B9 /* AppDelegate.swift */,
 				35907A7620C27D6900BA38B9 /* ViewController.swift */,
 				35907A7820C27D6900BA38B9 /* Main.storyboard */,
 				35907A7B20C27D6F00BA38B9 /* Assets.xcassets */,
 				35907A7D20C27D6F00BA38B9 /* LaunchScreen.storyboard */,
 				35907A8020C27D6F00BA38B9 /* Info.plist */,
-				35907A8620C27D9F00BA38B9 /* AddressPicker.swift */,
 			);
 			path = AddressPicker;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35907A7F20C27D6F00BA38B9 /* LaunchScreen.storyboard in Resources */,
+				35907A8920C27E1500BA38B9 /* area.plist in Resources */,
 				35907A7C20C27D6F00BA38B9 /* Assets.xcassets in Resources */,
 				35907A7A20C27D6900BA38B9 /* Main.storyboard in Resources */,
 			);

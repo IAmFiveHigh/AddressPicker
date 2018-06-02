@@ -21,6 +21,10 @@ class 通用PickerView: UIView {
     var dataSource = [String]() {
         didSet {
             pickerView.reloadAllComponents()
+            if dataSource.count > 0 {
+                pickerView.selectRow(0, inComponent: 0, animated: true)
+                text = dataSource[0]
+            }
         }
     }
     

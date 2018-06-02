@@ -18,7 +18,11 @@ class 通用PickerView: UIView {
 
     private let pickerView = UIPickerView(frame: CGRect(x: 0, y: 25, width: screenWidth, height: 0))
     
-    var dataSource = [String]()
+    var dataSource = [String]() {
+        didSet {
+            pickerView.reloadAllComponents()
+        }
+    }
     
     weak var delegate: 通用PickerViewDelegate?
     
@@ -34,6 +38,10 @@ class 通用PickerView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func dismiss() {
+        点击完成()
     }
     
     private func setupUI(frame: CGRect) {

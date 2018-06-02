@@ -13,6 +13,37 @@ let screenHeight = UIScreen.main.bounds.height
 
 class AddressPicker: UIView {
 
+    private var 省数据源 = [[String: Any]]()
+    private var 市数据源 = [[String: Any]]()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        backgroundColor = UIColor.white
+        
+        setupUI()
+        loadData()
+    }
     
-
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func loadData() {
+        
+        guard let path = Bundle.main.path(forResource: "area", ofType: "plist") else {return}
+        
+        guard let array = NSArray(contentsOfFile: path) else {return}
+        
+        if array is [[String: Any]] {
+            省数据源 = array as! [[String: Any]]
+            print(省数据源)
+        }else {
+            print("array is not [[string: any]]")
+        }
+    }
+    
+    private func setupUI() {
+        
+    }
+    
 }

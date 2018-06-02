@@ -14,6 +14,7 @@
 		35907A7F20C27D6F00BA38B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35907A7D20C27D6F00BA38B9 /* LaunchScreen.storyboard */; };
 		35907A8720C27D9F00BA38B9 /* AddressPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35907A8620C27D9F00BA38B9 /* AddressPicker.swift */; };
 		35907A8920C27E1500BA38B9 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35907A8820C27E1500BA38B9 /* area.plist */; };
+		35907A8B20C282B400BA38B9 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35907A8A20C282B400BA38B9 /* AddressModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		35907A8020C27D6F00BA38B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35907A8620C27D9F00BA38B9 /* AddressPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPicker.swift; sourceTree = "<group>"; };
 		35907A8820C27E1500BA38B9 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		35907A8A20C282B400BA38B9 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				35907A8620C27D9F00BA38B9 /* AddressPicker.swift */,
+				35907A8A20C282B400BA38B9 /* AddressModel.swift */,
 				35907A8820C27E1500BA38B9 /* area.plist */,
 				35907A7420C27D6900BA38B9 /* AppDelegate.swift */,
 				35907A7620C27D6900BA38B9 /* ViewController.swift */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35907A8B20C282B400BA38B9 /* AddressModel.swift in Sources */,
 				35907A7720C27D6900BA38B9 /* ViewController.swift in Sources */,
 				35907A8720C27D9F00BA38B9 /* AddressPicker.swift in Sources */,
 				35907A7520C27D6900BA38B9 /* AppDelegate.swift in Sources */,

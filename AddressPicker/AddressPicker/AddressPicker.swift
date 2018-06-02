@@ -14,7 +14,7 @@ let screenHeight = UIScreen.main.bounds.height
 protocol AddressPickerDelegate: class {
     func 返回选中省(_ 省: String, 市: String, 县: String, 街道们: [String])
     
-    func 点击完成()
+    func 点击完成(_ 省: String, 市: String, 县: String, 街道们: [String])
 }
 
 class AddressPicker: UIView {
@@ -96,8 +96,12 @@ class AddressPicker: UIView {
     
     @objc private func 点击完成() {
         if let delegate = delegate {
-            delegate.点击完成()
+            delegate.点击完成(省, 市: 市, 县: 县, 街道们: 街道数据)
         }
+    }
+    
+    deinit {
+        print("三级联动选择地址pickerView被销毁了")
     }
     
 }

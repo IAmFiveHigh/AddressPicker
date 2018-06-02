@@ -15,7 +15,7 @@ view.addSubview(a)
 实现AddressPickerDelegate协议方法
 ``` swift
 extension ViewController: AddressPickerDelegate {
-    func 点击完成() {
+    func 点击完成(_ 省: String, 市: String, 县: String, 街道们: [String]) {
 
     }
     func 返回选中省(_ 省: String, 市: String, 县: String, 街道们: [String]) {

@@ -24,9 +24,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: AddressPickerDelegate {
-    func 点击完成() {
+    func 点击完成(_ 省: String, 市: String, 县: String, 街道们: [String]) {
         
     }
+    
     func 返回选中省(_ 省: String, 市: String, 县: String, 街道们: [String]) {
         print(街道们)
         b.text = "\(省)\(市)\(县)"

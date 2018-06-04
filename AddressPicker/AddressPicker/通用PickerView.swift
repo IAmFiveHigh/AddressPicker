@@ -60,10 +60,10 @@ class 通用PickerView: UIView {
         pickerView.delegate = self
         pickerView.dataSource = self
         
-        let btn = UIButton(frame: CGRect(x: screenWidth - 40, y: 8, width: 40, height: 20))
+        let btn = UIButton(frame: CGRect(x: screenWidth - 100, y: 3, width: 100, height: 30))
         btn.setTitle("完成", for: .normal)
         btn.setTitleColor(UIColor(hexColor: "1A1917"), for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         btn.addTarget(self, action: #selector(点击完成), for: .touchUpInside)
         self.addSubview(btn)
         

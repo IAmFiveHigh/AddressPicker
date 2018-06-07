@@ -107,6 +107,58 @@ class AddressPicker: UIView {
     
 }
 
+extension AddressPicker {
+    func 设置省市县(_ 省: String, 市: String, 县: String) -> [String] {
+        
+        func 设置县(_ 县: String) {
+            for (index, item) in 县数据源.enumerated() {
+                if item.county == 县 {
+                    
+                    pickerView.selectRow(index, inComponent: 2, animated: true)
+                    self.县 = 县
+                    街道数据 = item.streets
+                    break
+                }
+            }
+        }
+        
+        func 设置市(_ 市: String) {
+            for (index, item) in 市数据源.enumerated() {
+                if item.city == 市 {
+                    pickerView.selectRow(index, inComponent: 1, animated: true)
+                    self.市 = 市
+                    县数据源 = item.areas
+                    街道数据 = 县数据源[0].streets
+                    pickerView.reloadAllComponents()
+                    pickerView.selectRow(0, inComponent: 2, animated: true)
+                    
+                    设置县(县)
+                    break
+                }
+            }
+        }
+        
+        for (index,item) in 省数据源.enumerated() {
+            if item.state == 省 {
+                pickerView.selectRow(index, inComponent: 0, animated: true)
+                self.省 = item.state
+                市数据源 = item.cities
+                县数据源 = 市数据源[0].areas
+                街道数据 = 县数据源[0].streets
+                pickerView.reloadAllComponents()
+                pickerView.selectRow(0, inComponent: 1, animated: true)
+                设置市(市)
+                
+                break
+            }
+        }
+        
+        return 街道数据
+        
+        
+    }
+}
+
 extension AddressPicker: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

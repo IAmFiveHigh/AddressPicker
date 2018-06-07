@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @objc private func 点击按钮1() {
-        print(a.设置省市县("河南省", 市: "洛阳市", 县: "老"))
+        print(a.设置省市县("河南省", 市: "洛阳市", 县: "西工区"))
     }
     @objc private func 点击按钮2() {
         print(a.设置省市县("黑龙江省", 市: "洛阳市", 县: "老"))

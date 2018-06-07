@@ -105,6 +105,10 @@ class AddressPicker: UIView {
         print("三级联动选择地址pickerView被销毁了")
     }
     
+    func dismiss() {
+        点击完成()
+    }
+    
 }
 
 extension AddressPicker {

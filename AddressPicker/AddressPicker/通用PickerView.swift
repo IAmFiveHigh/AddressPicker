@@ -81,7 +81,7 @@ class 通用PickerView: UIView {
     }
     
     deinit {
-        print("三级联动选择地址pickerView被销毁了")
+        print("通用pickerView被销毁了")
     }
 }
 

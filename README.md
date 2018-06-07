@@ -24,3 +24,10 @@ extension ViewController: AddressPickerDelegate {
     }
 }
 ```
+
+-------------
+添加默认地址
+``` swift
+a.设置省市县("河南省", 市: "洛阳市", 县: "西工区")
+```
+返回值是街道数组
